@@ -102,7 +102,7 @@ const Header = () => {
           className={`mt-8 ${menuOpen ? "opacity-100 translate-y-6" : "-tramslate-y-6 opacity-0"}`}
           style={{ transitionDelay: "870ms" }}
         >
-          <Button />
+          <Button name={"Get Appointment"} />
         </div>
       </div>
 
@@ -131,7 +131,7 @@ const Header = () => {
 
         {/* Desktop Button */}
         <div className="hidden md:block">
-          <Button />
+          <Button name={"Get Appointment"} />
         </div>
 
         {/* Hamburger */}
