@@ -17,6 +17,7 @@ const slides = [
     h1: "Justice Starts Here",
     h2: "Your Case. Our Commitment.",
     p: "With years of courtroom experience and a client-first approach, we deliver legal solutions that protect what matters most to you.",
+    btn: "EXPLORE OUR EXPERTISE",
   },
   {
     img: "/Slider-2.jpeg",
@@ -24,13 +25,15 @@ const slides = [
     h1: "Comprehensive Legal Solutions",
     h2: "One Firm. Every Legal Need.",
     p: "From corporate disputes to personal legal matters — we bring sharp legal minds and proven strategies to every case we take on.",
+    btn: "VIEW PRACTICE AREAS",
   },
   {
     img: "/Slider-3.png",
     tag: "Client First Approach",
     h1: "Your Legal Journey Begins Today",
     h2: "Bold Representation. Real Results.",
-    p: "Every case is unique. We take time to understand your situation and craft a legal strategy tailored specifically to your needs.",
+    p: "Don't face legal challenges alone. Our team is ready to listen, advise, and fight for the outcome you deserve — every step of the way.",
+    btn: "BOOK CONSULTATION",
   },
   {
     img: "/Slider-4.jpeg",
@@ -38,6 +41,7 @@ const slides = [
     h1: "Legal Help You Can Trust",
     h2: "Clarity in Complex Situations.",
     p: "Navigating the legal system can be overwhelming. Let our experts simplify the process and guide you toward the best possible outcome.",
+    btn: "BOOK CONSULTATION",
   },
 ];
 
@@ -261,13 +265,13 @@ export default function HeroSlider() {
               </div>
 
               {/* Bottom gold accent line */}
-              <div className="w-full h-1 bg-linear-to-r from-transparent via-[#c9a84c] to-transparent flex-shrink-0" />
+              <div className="w-full h-1 bg-linear-to-r from-transparent via-[#c9a84c] to-transparent shrink-0" />
             </div>
           </>
         )}
 
         {/* Hero — Single Swiper */}
-        <div className="relative w-full h-[450px] md:h-[530px] overflow-hidden font-sans">
+        <div className="relative w-full h-[530px] overflow-hidden font-sans">
           {/* Progress bar */}
           <div className="absolute top-0 left-0 w-full h-0.5 bg-white/20 z-20">
             <div
@@ -336,6 +340,7 @@ export default function HeroSlider() {
                     <p className="anim-p text-sm md:text-base text-white/80 max-w-2xl leading-relaxed font-sans font-light tracking-wide">
                       {slide.p}
                     </p>
+                    <Button name={`${slide.btn}`} />
                   </div>
                 </div>
               </SwiperSlide>

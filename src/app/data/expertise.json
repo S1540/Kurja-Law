@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Disputes and Litigation",
-    "image": "/justice.png",
+    "image": "/Disputes.png",
     "slug": "/disputes-and-litigation",
     "description": "We represent clients in complex, high-stakes disputes before the Supreme Court of India, High Courts, District Courts, Tribunals, and Arbitral Forums. Our practice covers civil, commercial, and regulatory litigation, including contractual disputes, civil suits, debt recovery proceedings, cheque dishonor proceedings, property disputes, and land conflicts. We adopt a strategic, result-oriented approach tailored to each case. Our team has also represented clients in arbitrations conducted by the Delhi International Arbitration Centre (DIAC), London Court of International Arbitration (LCIA), Singapore International Arbitration Centre (SIAC), and ad-hoc arbitral tribunals."
   },
@@ -23,7 +23,7 @@
   {
     "id": 4,
     "title": "Intellectual Property",
-    "image": "/Intellectual.png",
+    "image": "/Property.png",
     "slug": "/intellectual-property",
     "description": "We provide comprehensive advisory, protection, enforcement, and commercialization services across the full spectrum of intellectual property law. Our practice is designed to assist businesses, innovators, and brand owners in identifying, securing, managing, and defending their intellectual assets in a commercially strategic and legally robust manner.Our advisory and compliance work includes filing and prosecution of trademark, copyright, and patent applications; conducting prior art searches and registrability assessments; undertaking IP audits and risk reviews; and advising on portfolio structuring and long-term asset management. We regularly assist clients with new application filings, renewals, oppositions, and ongoing compliance requirements. We also conduct IP due diligence in mergers, acquisitions, investments, and commercial transactions, ensuring that intellectual assets are properly protected, enforceable, and aligned with business objectives. Our services extend to drafting and negotiating licensing arrangements, assignments, technology transfer agreements, and other commercialization structures. On the contentious side, we represent clients in intellectual property disputes before the High Court and district courts. Our litigation practice includes infringement suits and passing off actions, revocation and cancellation petitions, and rectification petitions. We also initiate and defend criminal actions in cases involving counterfeiting, piracy, and related offences. In enforcement matters, we coordinate closely with intellectual property investigators and enforcement agencies to develop effective anti-counterfeit strategies. This includes supervising evidence-gathering exercises, market investigations, mystery shopper operations, and assisting in search, seizure, and related actions to protect brand integrity and proprietary rights.Our intellectual property practice combines strategic advisory with strong courtroom capability, ensuring that clients’ innovations, brands, and creative works are both protected and effectively enforced."
   },
@@ -37,35 +37,35 @@
   {
     "id": 6,
     "title": "Real Estate Disputes",
-    "image": "/Real-Estate .png",
+    "image": "/estate.png",
     "slug": "/real-estate-disputes",
     "description": "We advise and represent clients across the full spectrum of real estate and property-related matters, combining transactional depth with strong dispute resolution capabilities. Our practice covers disputes concerning property ownership and title, builder–buyer conflicts, development agreements, lease and licensing arrangements, specific performance actions, injunction proceedings, and recovery claims.On the advisory side, we undertake comprehensive title due diligence and risk assessments, structure real estate transactions, and assist in obtaining regulatory approvals and clearances. We draft and negotiate conveyances, leases, joint development agreements, collaboration agreements, and related documentation. We also advise on land-use compliance, zoning issues, and regulatory requirements, ensuring adherence to applicable real estate laws, including the Real Estate (Regulation and Development) framework (RERA).In contentious matters, we represent clients in possession disputes, encroachment issues, tenancy matters, and construction-related litigation. We regularly act for homebuyers and real estate developers in proceedings before the High Courts, the National Consumer Disputes Redressal Commission (NCDRC), and the Real Estate Regulatory Authority (RERA), providing strategic and effective representation at every stage of the dispute.Our approach is practical, detail-oriented, and commercially conscious, aimed at protecting property rights while mitigating risk and ensuring regulatory compliance."
   },
   {
     "id": 7,
     "title": "Consumer Protection",
-    "image": "/Protection .png",
+    "image": "/Protection.png",
     "slug": "/consumer-protection",
     "description": "We represent both consumers and businesses in cases before Consumer Commissions, addressing deficiency of service, unfair trade practices, product liability, and compensation claims. Our expertise includes cases before District, State, and National Consumer Commissions related to service deficiencies, defective products, misrepresentation, and disputes involving product liability. Additionally, we advise businesses on preventative measures to reduce consumer claims by ensuring their policies and practices comply with legal standards."
   },
   {
     "id": 8,
     "title": "Insolvency and Bankruptcy",
-    "image": "/justice.png",
+    "image": "/insoluency.png",
     "slug": "/insolvency-and-bankruptcy",
     "description": "We advise and represent financial creditors, operational creditors, and corporate debtors under the Insolvency and Bankruptcy framework. Our services include initiation and defense of CIRP proceedings, resolution strategy, and related litigation."
   },
   {
     "id": 9,
     "title": "White Collar Litigation",
-    "image": "/Litigation.png",
+    "image": "/white-color.png",
     "slug": "/white-collar-litigation",
     "description": "We provide defense and advisory services to clients dealing with allegations related to fraud, financial misconduct, economic crimes, money laundering, benami transactions, bribery, misappropriation, regulatory breaches, and similar issues. Our representation extends to both individuals and corporations involved in investigations, enforcement actions, or prosecutions. Our practice also covers proceedings before enforcement and investigative agencies."
   },
   {
     "id": 10,
     "title": "Service matters and Employment practice",
-    "image": "/justice.png",
+    "image": "/service.png",
     "slug": "/service-matters-and-employment-practice",
     "description": "We represent employees, employers, and government servants in service and employment disputes including wrongful termination, disciplinary proceedings, contractual employment issues, and service benefits."
   }
