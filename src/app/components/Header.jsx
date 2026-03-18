@@ -6,6 +6,8 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { BsLinkedin, BsInstagram } from "react-icons/bs";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { PopupButton } from "react-calendly";
+import CalendlyButton from "./CalendlyButton";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -23,7 +25,7 @@ const Header = () => {
     {
       id: 2,
       title: "About Us",
-      href: "/about",
+      href: "#about",
     },
     {
       id: 3,
@@ -172,12 +174,7 @@ const Header = () => {
           </div>
 
           {/* Button */}
-          <div
-            className={`mt-8 transition-all duration-500 ${menuOpen ? "opacity-100 translate-y-0" : "-translate-y-6 opacity-0"}`}
-            style={{ transitionDelay: "870ms" }}
-          >
-            <Button name={"Get Appointment"} />
-          </div>
+          <CalendlyButton />
         </div>
 
         {/* Header */}
@@ -211,7 +208,7 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:block">
-            <Button name={"Get Appointment"} />
+            <CalendlyButton />
           </div>
 
           {/* Hamburger */}

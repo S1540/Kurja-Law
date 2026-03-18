@@ -6,6 +6,7 @@ import InfoBar from "../components/InfoBar";
 import expertise from "../data/expertise.json";
 import Button from "../components/Button";
 import Link from "next/link";
+import Footer from "../components/Footer";
 
 const page = () => {
   const [visible, setVisible] = useState([]);
@@ -163,6 +164,7 @@ const page = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 };

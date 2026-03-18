@@ -1,8 +1,47 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 const Contact = () => {
+  const [fromData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    phone: "",
+    message: "",
+  });
+
+  const handleFormChange = (e) => {
+    setFormData({ ...fromData, [e.target.name]: e.target.value });
+  };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch(
+        "https://script.google.com/macros/s/AKfycbzFiev8cJlOqkL-OmKAL8qc2m3MzamB9lB7uYc0MXolQk6lb2zmSKYBOF0ZGwBTl50/exec",
+        {
+          method: "POST",
+          body: JSON.stringify(fromData),
+        },
+      );
+
+      const data = await res.json();
+      if (data.status == "success") {
+        alert("Message sent successfully");
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          phone: "",
+          message: "",
+        });
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
-    <section className="max-w-full w-full py-14 px-4 bg-[#F9F6F2]">
+    <section id="contact" className="max-w-full w-full py-14 px-4 bg-[#F9F6F2]">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-10 md:mb-14">
@@ -13,9 +52,9 @@ const Contact = () => {
             Contact Us
           </h2>
           <div className="flex items-center justify-center gap-3">
-            <span className="block w-16 h-px bg-gradient-to-r from-transparent to-[#525E75]" />
+            <span className="block w-16 h-px bg-linear-to-r from-transparent to-[#525E75]" />
             <span className="block w-2 h-2 rotate-45 bg-[#525E75]" />
-            <span className="block w-16 h-px bg-gradient-to-l from-transparent to-[#525E75]" />
+            <span className="block w-16 h-px bg-linear-to-l from-transparent to-[#525E75]" />
           </div>
         </div>
 
@@ -28,7 +67,7 @@ const Contact = () => {
               <p className="text-[11px] tracking-[0.2em] uppercase text-[#525E75] font-medium">
                 Send a Message
               </p>
-              <div className="flex-1 h-px bg-gradient-to-r from-[#525E75]/30 to-transparent" />
+              <div className="flex-1 h-px bg-linear-to-r from-[#525E75]/30 to-transparent" />
             </div>
 
             <form className="flex flex-col gap-4 flex-1">
@@ -40,6 +79,8 @@ const Contact = () => {
                   <input
                     type="text"
                     name="name"
+                    value={fromData.name}
+                    onChange={handleFormChange}
                     placeholder="Enter Your Name"
                     className="px-3 py-2.5 text-sm border border-gray-400 bg-white outline-none focus:border-[#d79f49] transition-colors duration-300 rounded-sm text-gray-700 placeholder:text-gray-400"
                   />
@@ -52,6 +93,8 @@ const Contact = () => {
                   <input
                     type="email"
                     name="email"
+                    value={fromData.email}
+                    onChange={handleFormChange}
                     placeholder="Enter Your Email"
                     className="px-3 py-2.5 text-sm border border-gray-400 bg-white outline-none focus:border-[#d79f49] transition-colors duration-300 rounded-sm text-gray-700 placeholder:text-gray-400"
                   />
@@ -64,6 +107,8 @@ const Contact = () => {
                   <input
                     type="tel"
                     name="phone"
+                    value={fromData.phone}
+                    onChange={handleFormChange}
                     maxLength={10}
                     pattern="[0-9]{10}"
                     placeholder="Enter Your Phone Number"
@@ -78,6 +123,8 @@ const Contact = () => {
                   <input
                     type="text"
                     name="subject"
+                    value={fromData.subject}
+                    onChange={handleFormChange}
                     placeholder="Legal Consultation"
                     className="px-3 py-2.5 text-sm border border-gray-400 bg-white outline-none focus:border-[#d79f49] transition-colors duration-300 rounded-sm text-gray-700 placeholder:text-gray-400"
                   />
@@ -90,6 +137,8 @@ const Contact = () => {
                 </label>
                 <textarea
                   name="message"
+                  value={fromData.message}
+                  onChange={handleFormChange}
                   placeholder="Tell us about your legal matter..."
                   className="px-3 py-2.5 text-sm border border-gray-400 bg-white outline-none focus:border-[#d79f49] transition-colors duration-300 rounded-sm text-gray-700 placeholder:text-gray-400 resize-none flex-1 min-h-32"
                 />
@@ -97,7 +146,8 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="mt-2 self-start px-8 py-3 bg-[#525E75] text-white text-xs uppercase tracking-widest font-semibold hover:bg-[#3f4d63] transition-colors duration-300 rounded-sm"
+                onClick={handleSubmit}
+                className="mt-2 self-start px-8 py-3 bg-[#525E75] text-white text-xs uppercase tracking-widest font-semibold hover:bg-[#3f4d63] transition-colors duration-300 rounded-sm cursor-pointer"
               >
                 Send Message
               </button>

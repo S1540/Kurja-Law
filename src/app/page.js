@@ -11,7 +11,7 @@ import Contact from "./components/HomeComponents/Contact";
 export default function Home() {
   return (
     <>
-      <section>
+      <section className="scroll-smooth">
         <OpenToTop />
         <InfoBar />
         <Header />

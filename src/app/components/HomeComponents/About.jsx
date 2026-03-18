@@ -36,7 +36,10 @@ const About = () => {
         .read-btn:hover::after { width: 100%; }
       `}</style>
 
-      <section className="bg-[#F9F6F2] text-black font-sans px-4 py-12 md:py-16">
+      <section
+        id="about"
+        className="bg-[#F9F6F2] text-black font-sans px-4 py-12 md:py-16"
+      >
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-12 md:mb-16">
