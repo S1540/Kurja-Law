@@ -27,7 +27,7 @@ const Footer = () => {
         className="absolute bottom-12 right-10 cursor-pointer "
       >
         <div className="h-10 w-10 bg-[#f1ddbf62] rounded-full flex items-center justify-center animate-bounce">
-          <FaAnglesUp color="black" />
+          <FaAnglesUp color="white" />
         </div>
       </div>
       {/* Main footer */}
