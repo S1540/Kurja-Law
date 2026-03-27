@@ -182,9 +182,9 @@ const Header = () => {
           <div className=" h-13 w-13 md:h-16 md:w-16">
             <Link href={"/"}>
               <img
-                src="/kurja-logo.png"
+                src="/Kurja-logo2.png"
                 alt=""
-                className="object-cover h-full w-full"
+                className="object-cover h-full w-full scale-150 rounded-full"
               />
             </Link>
           </div>

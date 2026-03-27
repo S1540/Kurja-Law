@@ -35,9 +35,9 @@ const Footer = () => {
         {/* Col 1 — Brand */}
         <div className="flex flex-col gap-5">
           <img
-            src="/kurja-logo.png"
+            src="/kurja-logo2.png"
             alt="Kurja Law"
-            className="w-16 h-16 object-contain"
+            className="w-16 h-16 md:h-18 md:w-18 object-contain scale-150"
           />
           <div className="w-8 h-px bg-white/30" />
           <p className="text-sm text-white/70 leading-relaxed">

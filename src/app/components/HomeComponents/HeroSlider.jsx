@@ -68,7 +68,7 @@ export default function HeroSlider() {
       requestAnimationFrame(() =>
         requestAnimationFrame(() => setVisible(true)),
       );
-    }, 1000);
+    }, 1200);
     return () => clearTimeout(timer);
   }, []);
 
@@ -93,7 +93,7 @@ export default function HeroSlider() {
           opacity: 0;
           transition: transform 0.65s cubic-bezier(0.22,1,0.36,1), opacity 0.55s ease;
         }
-        .disclaimer-box.open { transform: translateY(0); opacity: 1; }
+        .disclaimer-box.open { transform: translateY(0); opacity: 1; z-index: 99; }
 
         .disclaimer-child {
           opacity: 0;
@@ -170,7 +170,7 @@ export default function HeroSlider() {
                 left-1/2 -translate-x-1/2 top-4
                 bg-white border border-[#c9a84c]/30
                 rounded-lg shadow-2xl z-20
-                flex flex-col overflow-hidden`}
+                flex flex-col overflow-y-auto overflow-x-hidden`}
             >
               {/* Top gold accent line */}
               <div className="w-full h-1 bg-linear-to-r from-transparent via-[#c9a84c] to-transparent shrink-0" />

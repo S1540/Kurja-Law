@@ -7,7 +7,13 @@ const About = () => {
 
   const fullText = `Kurja is the regional name for the Demoiselle Crane, a migratory bird revered across parts of North and Western India, particularly in Rajasthan. Known for its grace, resilience, and extraordinary endurance, the Kurja undertakes one of the most demanding migratory journeys in the world, crossing vast deserts and mountain ranges with discipline and collective strength. In regional folklore, the Kurja is a symbol of trust, loyalty, commitment, and emotional intelligence. It is often associated with devotion and steadfastness — returning season after season with precision and purpose. The name Kurja reflects our philosophy of legal practice. Like the bird, we believe in navigating complex terrains with foresight and preparation. We approach each matter with resilience, strategic alignment, and unwavering commitment to our clients' objectives. Our work is grounded in discipline, persistence, and the ability to travel the full distance — from advisory and risk assessment to final adjudication — without losing sight of the larger goal. Kurja represents clarity in complexity, strength in adversity, and the assurance that no matter how challenging the journey, it will be undertaken with purpose and precision.`;
 
-  const founderText = `Ishan Harlalka is a dispute resolution lawyer with experience in complex civil, commercial, regulatory, and intellectual property matters across diverse forums. He regularly appears before the Supreme Court of India, the Delhi High Court, specialist tribunals, national consumer fora, and district courts across Delhi & NCR. Before founding Kurja Law, Ishan served as a Senior Associate at a Delhi-based litigation practice, where he led teams, briefed senior counsel, and represented individuals, startups, MSMEs, FMCG companies, defence sector entities, pharmaceutical companies, and real estate developers. His practice spans civil and commercial litigation, domestic and international arbitration, intellectual property disputes and taxation litigation. He has advised and represented clients in arbitrations administered by institutions such as the Delhi International Arbitration Centre, the London Court of International Arbitration, and the Singapore International Arbitration Centre. His approach combines strategic clarity with commercial pragmatism, ensuring that legal solutions align with clients' long-term objectives. Beyond the courtroom, Ishan values balance and perspective. He enjoys playing football, is an avid reader, a music and theatre enthusiast, and spends his free time singing and learning musical instruments. At Kurja Law, he is committed to delivering clear, honest, and result-oriented counsel while building lasting client relationships founded on trust and transparency.`;
+  const textList = [
+    "Ishan Harlalka is a dispute resolution lawyer with experience in complex civil, commercial, regulatory, and intellectual property matters across diverse forums. He regularly appears before the Supreme Court of India, the Delhi High Court, specialist tribunals, national consumer fora, and district courts across Delhi & NCR.",
+    "At Kurja Law, he is committed to delivering clear, honest, and result-oriented counsel while building lasting client relationships founded on trust and transparency.",
+    "Before founding Kurja Law, Ishan served as a Senior Associate at a Delhi-based litigation practice, where he led teams, briefed senior counsel, and represented individuals, startups, MSMEs, FMCG companies, defence sector entities, pharmaceutical companies, and real estate developers. His practice spans civil and commercial litigation, domestic and international arbitration, intellectual property disputes and taxation litigation.",
+    "He has advised and represented clients in arbitrations administered by institutions such as the Delhi International Arbitration Centre, the London Court of International Arbitration, and the Singapore International Arbitration Centre. His approach combines strategic clarity with commercial pragmatism, ensuring that legal solutions align with clients’ long-term objectives.",
+    "Beyond the courtroom, Ishan values balance and perspective. He enjoys playing football, is an avid reader, a music and theatre enthusiast, and spends his free time singing and learning musical instruments – interests that reflect the discipline, creativity, and resilience he brings to his legal practice.",
+  ];
 
   return (
     <>
@@ -38,8 +44,23 @@ const About = () => {
 
       <section
         id="about"
-        className="bg-[#F9F6F2] text-black font-sans px-4 py-12 md:py-16"
+        className="relative z-20 bg-[#F9F6F2] text-black font-sans px-4 py-12 md:py-16 h-auto"
       >
+        <div className="absolute bottom-0 left-20 h-44 w-44 pointer-events-none hidden sm:block">
+          <img
+            src="/justice-bg.png"
+            alt=""
+            className="w-full h-full object-cover scale-x-[-1] z-10 opacity-15"
+          />
+        </div>
+        <div className="absolute top-16 left-20 h-44 w-44 pointer-events-none hidden sm:block ">
+          <img
+            src="/hat-vector.png"
+            alt=""
+            className="w-full h-full object-contain scale-x-[-1] z-10 opacity-60"
+          />
+        </div>
+
         <div className="max-w-7xl mx-auto">
           {/* Heading */}
           <div className="text-center mb-12 md:mb-16">
@@ -100,7 +121,7 @@ const About = () => {
           </div>
 
           {/* Our Founder Section */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 items-start">
+          <div className="relative z-20 grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-16 items-start">
             {/* Left — founder text */}
             <div>
               <div className="flex items-center gap-3 mb-6">
@@ -121,9 +142,16 @@ const About = () => {
                 Dispute Resolution Lawyer
               </p>
 
-              <p className="text-sm md:text-base text-gray-600 leading-relaxed">
-                {founderText}
-              </p>
+              {/* <li className="text-sm list-disc md:text-base text-gray-800 leading-relaxed">
+                {founderText[0]}
+              </li> */}
+              <ul className="flex flex-col gap-2 px-4 text-sm text-start list-disc md:text-base text-gray-600 leading-relaxed">
+                {textList.map((text, index) => (
+                  <li key={index} className="list-disc">
+                    {text}
+                  </li>
+                ))}
+              </ul>
 
               {/* Court tags */}
               <div className="mt-6 flex flex-wrap gap-2">
@@ -147,13 +175,13 @@ const About = () => {
             {/* Right — image */}
             <div className="relative flex flex-col items-center">
               <div className="relative w-full max-w-md mx-auto">
-                <div className="absolute hidden md:block -bottom-16 -left-3 w-14 h-14 border-b-2 border-l-2 border-[#525E75]/25 pointer-events-none z-0" />
-                <div className="absolute hidden md:block -bottom-16 -right-3 w-14 h-14 border-b-2 border-r-2 border-[#525E75]/25 pointer-events-none z-0" />
-                <div className="absolute hidden md:block top-10 -left-3 w-14 h-14 border-t-2 border-l-2 border-[#525E75]/25 pointer-events-none z-0" />
-                <div className="absolute hidden md:block top-10 -right-3 w-14 h-14 border-t-2 border-r-2 border-[#525E75]/25 pointer-events-none z-0" />
+                <div className="absolute hidden md:block -bottom-36 -left-3 w-14 h-14 border-b-2 border-l-2 border-[#525E75]/25 pointer-events-none z-0" />
+                <div className="absolute hidden md:block -bottom-36 -right-3 w-14 h-14 border-b-2 border-r-2 border-[#525E75]/25 pointer-events-none z-0" />
+                <div className="absolute hidden md:block top-28 -left-3 w-14 h-14 border-t-2 border-l-2 border-[#525E75]/25 pointer-events-none z-0" />
+                <div className="absolute hidden md:block top-28 -right-3 w-14 h-14 border-t-2 border-r-2 border-[#525E75]/25 pointer-events-none z-0" />
 
                 {/* Image */}
-                <div className="relative top-6 md:top-12 z-10 overflow-hidden shadow-lg">
+                <div className="relative top-6 md:top-32 z-10 overflow-hidden shadow-lg">
                   <img
                     src="/kurja-founder.png"
                     alt="Ishan Harlalka — Founder"
